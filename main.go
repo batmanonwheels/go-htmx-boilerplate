@@ -14,7 +14,7 @@ func main() {
 	router := gin.Default()
 
 	//load all html files and components
-	router.LoadHTMLFiles("templates/index.html", "templates/components/head.html", "templates/components/header.html")
+	router.LoadHTMLFiles("templates/index.html", "templates/components/head.html")
 
 	//load static directory
 	router.StaticFS("static", http.Dir("./static"))
