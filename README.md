@@ -29,8 +29,7 @@ Congrats! You're ready to starting working on that new project!
 If you'd rather run the commands above in one go, check out the command below:
 
 ```
-git clone git@github.com:batmanonwheels/go-htmx-boilerplate.git &&\
-cd go-htmx-boilerplate &&\
+git clone https://github.com/batmanonwheels/go-htmx-boilerplate.git . &&\
 rm -rf .git &&\
 curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
 chmod +x tailwindcss-macos-arm64
