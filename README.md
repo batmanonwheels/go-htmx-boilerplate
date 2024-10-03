@@ -4,16 +4,10 @@ Everything you need to kick off your next Go + HTMX web app!
 
 ## Getting Started
 
-Getting started is a simple as cloning the repository
+Getting started is a simple as cloning the repository into your current directory
 
 ```
-git clone git@github.com:batmanonwheels/go-htmx-boilerplate.git
-```
-
-Changing into the new directory
-
-```
-cd go-htmx-boilerplate
+git clone https://github.com/batmanonwheels/go-htmx-boilerplate.git .
 ```
 
 Removing the .git folder (and any additional files, folders or dependencies you may not need)
