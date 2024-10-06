@@ -1,6 +1,7 @@
 package main
 
 import (
+	// "database/sql"
 	"log"
 	"net/http"
 	"os"
@@ -9,19 +10,25 @@ import (
 )
 
 func main() {
-	gin.SetMode(gin.ReleaseMode)
+	// // connStr := "user=pqgotest dbname=pqgotest sslmode=verify-full"
+	// db, err := sql.Open("postgres", connStr)
+	// if err != nil {
+	// log.Fatal(err)
+	// }
+
+	// gin.SetMode(gin.ReleaseMode)
 
 	router := gin.Default()
 
-	//load all html files and components
+	// load all html files and components
 	router.LoadHTMLFiles("templates/index.html", "templates/components/head.html")
 
-	//load static directory
+	// load static directory
 	router.StaticFS("static", http.Dir("./static"))
 
 	router.SetTrustedProxies(nil)
 
-	//site routes
+	// site routes
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{})
 	})
