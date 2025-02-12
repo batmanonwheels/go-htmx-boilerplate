@@ -41,7 +41,6 @@ rm -rf .git &&\
 curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
 chmod +x tailwindcss-macos-arm64
 mv tailwindcss-macos-arm64 tailwindcss
-
 ```
 
 ## Development
@@ -50,7 +49,9 @@ Run your app locally with the following commands. You'll want to run each comman
 
 ```
 ./tailwindcss -i ./static/css/input.css -o ./static/css/styles.css --watch
+```
 
+```
 air
 ```
 
@@ -79,6 +80,6 @@ A Dockerfile with an [NGINX](https://www.nginx.com) base image is also provided 
 1. `./tailwindcss -i ./static/css/input.css -o ./static/css/styles.css --minify`
 2. `go build`
 3. `docker build . -t <container_name>`
-   - Example: `docker build . -t todo-app`
+   - Example: `docker build . -t <app_name>`
 4. `docker run  -p <port_number>:80 <container_name>`
-   - Example: `docker run -p 8080:80 todo-app`
+   - Example: `docker run -p 8080:80 <app_name>`
