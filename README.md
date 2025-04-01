@@ -1,5 +1,7 @@
 # Go + HTMX Boilerplate
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/batmanonwheels/go-htmx-boilerplate)](https://goreportcard.com/report/github.com/batmanonwheels/go-htmx-boilerplate)
+
 Everything you need to kick off your next Go + HTMX web app!
 
 ## Getting Started
